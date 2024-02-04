@@ -1,4 +1,5 @@
 package com.stocktransaction.springcqrs.domain.valueobjects
 
-class Monetary {
-}
+data class Monetary(
+    val value: Double
+)
