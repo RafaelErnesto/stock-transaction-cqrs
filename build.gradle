@@ -22,8 +22,12 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
 	implementation 'org.jetbrains.kotlin:kotlin-reflect'
+	implementation 'org.axonframework:axon-bom:4.5.13'
+	implementation 'org.axonframework:axon-spring-boot-starter'
+
 	developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.axonframework:axon-test'
 }
 
 tasks.withType(KotlinCompile) {
