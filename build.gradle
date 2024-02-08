@@ -23,7 +23,8 @@ dependencies {
 	implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
 	implementation 'org.jetbrains.kotlin:kotlin-reflect'
 	implementation 'org.axonframework:axon-bom:4.5.13'
-	implementation 'org.axonframework:axon-spring-boot-starter'
+	implementation 'org.axonframework:axon-spring-boot-starter:4.9.1'
+
 
 	developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

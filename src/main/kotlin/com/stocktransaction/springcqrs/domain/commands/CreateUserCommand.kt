@@ -1,4 +1,9 @@
 package com.stocktransaction.springcqrs.domain.commands
 
-class CreateUserCommand {
-}
+import org.axonframework.modelling.command.TargetAggregateIdentifier
+import java.util.UUID
+
+data class CreateUserCommand (
+    @TargetAggregateIdentifier
+    val userId: UUID
+)
