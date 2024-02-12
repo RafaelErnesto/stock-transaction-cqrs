@@ -1,6 +1,6 @@
 package com.stocktransaction.springcqrs.domain.aggregates
 
-import com.stocktransaction.springcqrs.transport.commands.CreateStockCommand
+import com.stocktransaction.springcqrs.domain.commands.CreateStockCommand
 import com.stocktransaction.springcqrs.domain.events.CreateStockEvent
 import org.axonframework.commandhandling.CommandHandler
 import org.axonframework.eventsourcing.EventSourcingHandler

@@ -1,4 +1,4 @@
-package com.stocktransaction.springcqrs.transport.events
+package com.stocktransaction.springcqrs.domain.events
 
 import java.util.*
 
