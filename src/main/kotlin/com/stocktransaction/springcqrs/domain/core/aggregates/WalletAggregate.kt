@@ -1,7 +1,7 @@
-package com.stocktransaction.springcqrs.domain.aggregates
+package com.stocktransaction.springcqrs.domain.core.aggregates
 
-import com.stocktransaction.springcqrs.domain.commands.CreateWalletCommand
-import com.stocktransaction.springcqrs.domain.events.CreateWalletEvent
+import com.stocktransaction.springcqrs.domain.core.commands.CreateWalletCommand
+import com.stocktransaction.springcqrs.domain.core.events.CreateWalletEvent
 import org.axonframework.commandhandling.CommandHandler
 import org.axonframework.eventsourcing.EventSourcingHandler
 import org.axonframework.modelling.command.AggregateIdentifier

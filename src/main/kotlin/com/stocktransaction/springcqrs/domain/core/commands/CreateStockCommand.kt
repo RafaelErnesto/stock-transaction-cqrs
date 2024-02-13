@@ -1,4 +1,4 @@
-package com.stocktransaction.springcqrs.domain.commands
+package com.stocktransaction.springcqrs.domain.core.commands
 
 import org.axonframework.modelling.command.TargetAggregateIdentifier
 import java.util.*

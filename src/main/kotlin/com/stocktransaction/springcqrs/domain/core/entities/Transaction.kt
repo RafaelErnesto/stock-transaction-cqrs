@@ -1,6 +1,6 @@
-package com.stocktransaction.springcqrs.domain.entities
+package com.stocktransaction.springcqrs.domain.core.entities
 
-import com.stocktransaction.springcqrs.domain.valueobjects.Monetary
+import com.stocktransaction.springcqrs.domain.core.valueobjects.Monetary
 import java.time.LocalDateTime
 import java.util.UUID
 

@@ -1,4 +1,4 @@
-package com.stocktransaction.springcqrs.domain.valueobjects
+package com.stocktransaction.springcqrs.domain.core.valueobjects
 
 import java.lang.RuntimeException
 

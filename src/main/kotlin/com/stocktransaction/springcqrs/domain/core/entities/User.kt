@@ -1,4 +1,4 @@
-package com.stocktransaction.springcqrs.domain.entities
+package com.stocktransaction.springcqrs.domain.core.entities
 
 import java.util.*
 
