@@ -1,6 +1,6 @@
 package com.stocktransaction.springcqrs.domain.core.entities
 
-import com.stocktransaction.springcqrs.domain.core.valueobjects.Monetary
+import com.stocktransaction.springcqrs.domain.core.valueobjects.Currency
 import java.util.UUID
 
 data class WalletStock(
@@ -8,5 +8,5 @@ data class WalletStock(
     val walletId: UUID,
     val stockId: UUID,
     val amount: Long,
-    val averagePrice: Monetary
+    val averagePrice: Currency
 )

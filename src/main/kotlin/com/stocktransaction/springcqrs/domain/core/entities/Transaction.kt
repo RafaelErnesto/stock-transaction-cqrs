@@ -1,6 +1,6 @@
 package com.stocktransaction.springcqrs.domain.core.entities
 
-import com.stocktransaction.springcqrs.domain.core.valueobjects.Monetary
+import com.stocktransaction.springcqrs.domain.core.valueobjects.Currency
 import java.time.LocalDateTime
 import java.util.UUID
 
@@ -11,6 +11,6 @@ data class Transaction(
     val sellerId: UUID,
     val stockId: UUID,
     val amount: Long,
-    val totalValue: Monetary,
+    val totalValue: Currency,
     val date: LocalDateTime
 )
