@@ -8,8 +8,3 @@ data class Stock(
     val id: UUID,
     val code: StockCode
 )
-
-fun Stock.toCreateStockCommand() = CreateStockCommand(
-    stockId = id,
-    stockCode = StockCode(code.value)
-)

@@ -3,6 +3,7 @@ package com.stocktransaction.springcqrs.domain.core.aggregates
 import com.stocktransaction.springcqrs.domain.core.commands.CreateStockCommand
 import com.stocktransaction.springcqrs.domain.core.entities.Stock
 import com.stocktransaction.springcqrs.domain.core.events.CreateStockEvent
+import com.stocktransaction.springcqrs.domain.core.valueobjects.StockCode
 import com.stocktransaction.springcqrs.domain.repositories.StockRepository
 import org.axonframework.commandhandling.CommandHandler
 import org.axonframework.eventsourcing.EventSourcingHandler
@@ -17,10 +18,11 @@ class StockAggregate(
 ) {
     @AggregateIdentifier
     lateinit var stockId: UUID
+    lateinit var stockCode: StockCode
 
     @CommandHandler
     fun handler(command: CreateStockCommand) {
-        AggregateLifecycle.apply(CreateStockCommand(stockId))
+        AggregateLifecycle.apply(CreateStockCommand(stockId, stockCode))
     }
 
     @EventSourcingHandler

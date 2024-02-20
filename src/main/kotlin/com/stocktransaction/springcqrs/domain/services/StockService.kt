@@ -1,7 +1,7 @@
 package com.stocktransaction.springcqrs.domain.services
 
+import com.stocktransaction.springcqrs.domain.core.commands.toCreateStockCommand
 import com.stocktransaction.springcqrs.domain.core.entities.Stock
-import com.stocktransaction.springcqrs.domain.core.entities.toCreateStockCommand
 import org.axonframework.commandhandling.gateway.CommandGateway
 
 class StockService(
