@@ -13,7 +13,7 @@ class CreateStockListener(
 ) {
     private val log = Logger.getLogger(CreateStockListener::class.java.name)
 
-    @KafkaListener(topics = ["create-stock"], groupId = "group_id")
+    @KafkaListener(topics = ["create-stock"], groupId = "my-group-id")
     fun createStock(message: String) {
         try {
            stockService.createStock(parseMessage(message))

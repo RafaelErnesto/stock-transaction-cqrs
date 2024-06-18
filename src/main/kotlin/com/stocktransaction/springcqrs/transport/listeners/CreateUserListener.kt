@@ -13,7 +13,7 @@ class CreateUserListener(
 ) {
     private val log = Logger.getLogger(CreateUserListener::class.java.name)
 
-    @KafkaListener(topics = ["create-user"], groupId = "group_id")
+    @KafkaListener(topics = ["create-user"], groupId = "my-group-id")
     fun consume(message: String) {
         userService.createUser(parseMessage(message))
     }

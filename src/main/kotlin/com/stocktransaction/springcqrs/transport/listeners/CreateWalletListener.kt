@@ -13,7 +13,7 @@ class CreateWalletListener(
 ) {
     private val log = Logger.getLogger(CreateWalletListener::class.java.name)
 
-    @KafkaListener(topics = ["create-wallet"], groupId = "group_id")
+    @KafkaListener(topics = ["create-wallet"], groupId = "my-group-id")
     fun createWallet(message: String) {
         try {
             walletService.createWallet(parseMessage(message))
